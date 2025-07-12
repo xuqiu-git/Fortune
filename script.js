@@ -66,5 +66,8 @@ const answers = [
 function getFortune() {
   const seconds = new Date().getSeconds();
   const answer = answers[seconds];
-  document.getElementById("result").textContent = answer;
+  //document.getElementById("result").textContent = answer;
+  const resultDiv = document.getElementById("result");
+  resultDiv.textContent = answer;
+  resultDiv.style.display = "block";  // ✅ 显示结果区域
 }

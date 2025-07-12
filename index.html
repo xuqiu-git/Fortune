@@ -1,15 +1,29 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>占卜</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- 引入外部 CSS 和梦幻字体 -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <h1>占卜</h1>
-  <button onclick="getFortune()">开始占卜</button>
-  <p id="result"></p>
+  <!-- 梦幻诗句部分 -->
+  <div class="top-poem">
+    <p>芸芸众生阳春白雪无忧扰</p>
+    <p>茫茫尘寰高山流水有知音</p>
+  </div>
 
+  <!-- 主容器 -->
+  <div class="container">
+    <h1>时间占卜</h1>
+    <button onclick="getFortune()">开始占卜</button>
+    <div id="result"></div>
+  </div>
+
+  <!-- 脚本引入 -->
   <script src="script.js"></script>
 </body>
 </html>
