@@ -22,7 +22,7 @@ const answers = [
   "听一下別人劝告吧",
   "现在没法要求太多",
   "用轻松的态度面对",
-  "事與願違，须多留意自己情绪",
+  "事与愿违，须多留意自己情绪",
   "要节制了，记得见好就收",
   "不在你控制范围以内",
   "小心!!",
@@ -64,10 +64,18 @@ const answers = [
 
 
 function getFortune() {
+  const input = document.getElementById("userInput").value.trim();
+  const resultDiv = document.getElementById("result");
+  
+  if (input === "") {
+    resultDiv.textContent = "请先书写你心中的疑问，方可启卜。";
+    resultDiv.style.display = "block";
+    return;
+  }
+
   const seconds = new Date().getSeconds();
   const answer = answers[seconds];
-  //document.getElementById("result").textContent = answer;
-  const resultDiv = document.getElementById("result");
+
   resultDiv.textContent = answer;
   resultDiv.style.display = "block";  // ✅ 显示结果区域
 }
