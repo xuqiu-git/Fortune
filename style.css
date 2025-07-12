@@ -1,9 +1,38 @@
+
 body {
   font-family: sans-serif;
   text-align: center;
   margin-top: 100px;
+  background-image: url('bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: white;
 }
+
 button {
   font-size: 1.2em;
   padding: 10px 20px;
+  background-color: rgba(0, 128, 255, 0.8);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(0, 128, 255, 1);
+}
+
+#result {
+  margin-top: 30px;
+  font-size: 1.5em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
 }
